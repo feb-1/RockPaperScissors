@@ -1,0 +1,47 @@
+body{
+    background:url('bgimg.jpg') no-repeat ;
+    background-position: top center;
+    background-size: cover;
+}
+.container h1{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-box-container img{
+    height: 300px;
+    width: 300px;
+}
+.flex-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    justify-content: space-around;
+    padding: 10px;
+}
+.flex-box-container img:hover{
+    box-shadow: 0px 10px 50px rgba(255,0,0,1);
+}
+
+
+@media (max-width: 600px) {
+    body {
+      align-items: center;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #rock{
+        width: 250px;
+        height: 250px;
+    } 
+    #paper{
+        width: 250px;
+        height: 250px;
+    }
+    #scissors{
+        width: 250px;
+        height: 250px;
+    }
+}
